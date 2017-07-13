@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Gallery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="shortcut icon" href="Images/logo.png" type="favicon/ico" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/reset.css" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/style.css" />
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<div id="menu_bar" class="menu">
+				<button id="icon_reader" class="menu_read"></button>
+				<ul id="menu_list" class="dropdown-content">
+				    <li><a href="index.html" id="home_link">Home</a></li>
+				    <li><a href="#">About Us</a></li>
+				    <li><a href="#" target="_self" id="winner_photo">Winner of Month</a></li>
+				    <li class="login_btn"><a href="#" id="login_link">Login/Register</a></li>
+				    <li class="logout_btn"><a href="index.html" id="logout_link">Logout</a></li>
+				 </ul>
+			</div>
+			<div id="logo" class="logo_icon"></div>
+		</header>
+
+		<div id="login_form_div_id" class="login_form_div">
+		<h1>Log In</h1>
+			<form id="login_form">
+				<label>
+					<span>UserName</span>
+					<input type="text" id="username" name="username" placeholder="UserName">
+				</label>
+
+				<label>
+					<span>Password</span>
+					<input type="password" id="password" name="password" placeholder="Password">
+				</label>
+
+				<div id="errormsg">
+					
+				</div>
+				<input id="submitbtn_login" type="submit" name="submit" value="Log In">
+			</form>
+
+			<span class="login_register">New User?</span><a href="#" id="register_here">Register Here</a>
+		</div>
+
+		<div id="register_form_div_id" class="register_form_div">
+		<h1>Register Here</h1>
+			<form id="register_form">
+				<label>
+					<span>UserName</span>
+					<input type="text" name="username" placeholder="UserName" id="register_username" >
+				</label>
+
+				<label>
+					<span>Password</span>
+					<input type="password" name="password" placeholder="Password" id="register_password">
+				</label>
+
+				<label>
+					<span>Confirm Password</span>
+					<input type="password" name="confirm_password" placeholder="Confirm Password" id="confirm_password" >
+				</label>
+				<div id="registererrormsg">
+					
+			    </div>
+
+				<input id="submitbtn_register" type="submit" name="submit" value="Register">
+			</form>
+
+			<!-- <span>Already User </span><a href="#" onclick="show('login_form','register_form')">Log In Here</a> -->	
+
+			<span class="login_register">Already User </span><a href="#" id="login_here">Log In Here</a>
+		</div>
+
+		<div id="userpage" class="user_login_page">
+			<div id="userspan">
+				Welcome,<span id="usernamespan"></span>
+			</div>
+
+			<div class="new_photo_div" id='add_photo_div'>
+			</div>
+
+			<div id="imagegallery" class="image_gallery">
+			</div>
+			<div class="pagination_btn">
+				<a href="" id="btn_prev">Prev</a>
+				<a href="" id="btn_next">Next</a>
+			</div>
+
+			<div id="winning_image">
+			</div>
+		</div>
+
+		<footer>
+			<p>
+				<a href="">Privacy Policy</a>|
+				<a href="">Terms of Use</a>|
+				<a href="">Contact</a>
+				<span>&copy; 2017 MyGallery, all rights reserved.</span>
+			</p>
+			<div class="social">
+				<a class="social_media_logo facebook_logo" href=""></a>
+				<a class="social_media_logo twitter_logo" href=""></a>
+				<a class="social_media_logo wifi_logo" href=""></a>
+			</div>
+		</footer>
+	</div>
+	<script src="JS/menuscript.js"></script>
+	<script src="JS/script.js"></script> 
+</body>
+</html>

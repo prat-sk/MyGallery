@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Gallery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="shortcut icon" href="Images/logo.png" type="favicon/ico" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/reset.css" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/style.css" />
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<div id="menu_bar" class="menu">
+				<button id="icon_reader" class="menu_read"></button>
+				<ul id="menu_list" class="dropdown-content">
+				    <li><a href="index.html">Home</a></li>
+				    <li><a href="#">About Us</a></li>
+				    <li><a href="#">Winner of Month</a></li>
+				    <li><a href="login.html">Login/Register</a></li>
+				 </ul>
+			</div>
+			<div id="logo" class="logo_icon"></div>
+		</header>
+
+		<!-- <div id="login_form">
+		<h1>Log In</h1>
+			<form onsubmit="check_login()">
+				<label>
+					<span>UserName</span>
+					<input type="text" id="username" name="username" placeholder="UserName" required>
+				</label>
+
+				<label>
+					<span>Password</span>
+					<input type="password" id="password" name="password" placeholder="Password" required>
+				</label>
+
+				<div id="errormsg">
+					
+				</div>
+				<input type="submit" name="submit" value="Log In">
+			</form>
+
+			<span>New User?</span><a href="#" onclick="show('register_form','login_form')">Register Here</a>	
+		</div>
+
+		<div id="register_form">
+		<h1>Register Here</h1>
+			<form>
+				<label>
+					<span>UserName</span>
+					<input type="text" name="username" placeholder="UserName" required>
+				</label>
+
+				<label>
+					<span>Password</span>
+					<input type="password" name="password" placeholder="Password" required>
+				</label>
+
+				<label>
+					<span>Confirm Password</span>
+					<input type="password" name="confirm_password" placeholder="Confirm Password" required>
+				</label>
+
+				<input type="submit" name="submit" value="Register">
+			</form>
+
+			<span>Already User </span><a href="#" onclick="show('login_form','register_form')">Log In Here</a>	
+		</div>
+		
+		<div id="userpage">
+			<div>
+				Welcome,<span id="usernamespan"></span>
+			</div>
+			<div>
+				Images
+			</div>
+		</div> -->
+
+		<div class="slider" id="slide">
+			<input type="radio" name="slide_switch" id="id1"/>
+			<label for="id1">
+				<img src="./Images/adventure.jpg" alt="adventure"/>
+			</label>
+			<img src="./Images/adventure.jpg" alt="adventure"/>
+			
+			<input type="radio" name="slide_switch" id="id2" checked="checked"/>
+			<label for="id2">
+				<img src="./Images/butterfly.jpg" alt="butterfly"/>
+			</label>
+			<img src="./Images/butterfly.jpg" alt="butterfly"/>
+			
+			<input type="radio" name="slide_switch" id="id3"/>
+			<label for="id3">
+				<img src="./Images/sunset.jpg" alt="sunset"/>
+			</label>
+			<img src="./Images/sunset.jpg" alt="sunset"/>
+			
+			<input type="radio" name="slide_switch" id="id4"/>
+			<label for="id4">
+				<img src="./Images/nature.jpg" alt="nature"/>
+			</label>
+			<img src="./Images/nature.jpg" alt="nature"/>
+			
+			<!-- <input type="radio" name="slide_switch" id="id5"/>
+			<label for="id5">
+				<img src="./Images/scooter.jpg"/>
+			</label>
+			<img src="./Images/scooter.jpg"/> -->
+		</div>
+
+		<aside>
+			<section class="twitter"> 
+				<h1>Latest Tweet</h1>
+				<p><a href="http://twitter.com" class="button">Join the Conversation</a></p>
+			</section> 
+			<section class="facebook">
+				<h1>Let's be friends!</h1>
+				<p>For weekly finds, community recommendations, and more, like us on Facebook.</p>
+				<p><a href="http://www.facebook.com" class="button">Join the Community</a></p>
+			</section>
+		</aside>
+
+		<footer>
+			<p>
+				<a href="">Privacy Policy</a>|
+				<a href="">Terms of Use</a>|
+				<a href="">Contact</a>
+				<span>&copy; 2017 MyGallery, all rights reserved.</span>
+			</p>
+			<div class="social">
+				<a class="social_media_logo facebook_logo" href=""></a>
+				<a class="social_media_logo twitter_logo" href=""></a>
+				<a class="social_media_logo wifi_logo" href=""></a>
+			</div>
+		</footer>
+	</div>
+	<!-- <script src="JS/script.js"></script>  -->
+	<script src="JS/menuscript.js"></script>
+</body>
+</html>

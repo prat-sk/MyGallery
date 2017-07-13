@@ -1,0 +1,483 @@
+body{
+	font-family: arial;
+}
+header{
+	background-color: rgb(255,255,204);
+	margin: 0 auto;
+}
+.menu{
+	position: relative;
+    display: inline-block;
+    top: 60%;
+    left: 10%;
+}
+.menu_read{
+	background: url(../Images/menuicon.png) no-repeat;
+	position: absolute;
+	top: 50px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left:-20px;
+    background-color: rgb(255,255,204);
+    min-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+	background-color: rgb(255,221,181);
+}
+.logout_btn a{
+	display: none;
+}
+.show,#showDiv {
+	display:block;
+}
+#hide{
+	display: none;
+}
+.register_form_div{
+	display: none;
+}
+.logo_icon{
+	background: url(../Images/logo.png) no-repeat;
+	width:145px;
+    height: 145px;
+    position: relative;
+    left: 30%;
+}
+.user_login_page,.new_photo_div{
+	display: none;
+	margin:3%;
+}
+.user_login_page img{
+	width: 90%;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 10px;
+}
+.user_login_page p{
+	margin-left: 10px;
+	width: 90%;
+	padding-bottom: 0;
+	text-align: center;
+}
+.user_login_page p a{
+	text-decoration: none;
+	padding: 9px;
+	color: rgb(87,44,25);
+	margin: 1%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.pagination_btn{
+	width: 90%;
+    text-align: center;
+}
+.btn_add_new_photo{
+	margin: 3%;
+}
+.new_photo_div form{
+	border: 1px solid rgb(128,128,128);
+    padding: 2% 4%;
+    width: 88%;
+}
+
+.new_photo_div form+input{
+	padding: 6% 0;
+	margin: 2% 4%;
+}
+
+.new_photo_div form textarea{
+	padding: 3% 2%;
+	margin:4% 0;
+}
+.image_save_button{
+	padding: 0 5%;
+	margin:4% 0;
+	vertical-align: top;
+}
+
+.editInput{
+	margin: 3%;
+	width: 60%;
+	padding: 1%;
+}
+.editInputDiv{
+	background: rgba(128,128,128,0.5);
+	margin-top: 5%;
+}
+/*#like_image{
+	background: url('../Images/spritelike.jpg') -203px -115px;
+}
+#facebook_image{
+	background: url('../Images/spritefb.jpg') 400px 477px;
+}
+#twitter_image{
+	background: url('../Images/spritefb.jpg') 400px 654px;
+}*/
+.login_form_div,.register_form_div{
+	width:80%;
+	margin: 20px auto;
+	padding: 10px;
+	border: 1px solid rgba(128,128,128,0.8);
+	background: rgba(0,0,0,0.2);
+}
+
+.login_form_div form,.register_form_div form{
+	padding: 20px;
+	margin: 20px;
+	border: 1px solid rgba(128,128,128,0.8);
+	background: rgba(0,0,0,0.2);
+}
+.login_form_div h1,.register_form_div h1{
+	font-size: 1.4em;
+	margin: 2% auto;
+	text-align: center;
+}
+.login_form_div input,.register_form_div input{
+	display: block;
+	width: 80%;
+	margin: 2% 0;
+	padding-left: 3%;
+}
+.login_form_div #submitbtn_login,.register_form_div #submitbtn_register{
+	width:45%;
+}
+.login_form_div span,.register_form_div span{
+	padding-left: 3%;
+}
+.login_register{
+	margin:0% 1% 0 8%;
+}
+
+#login_form a,#register_form a{
+	text-decoration: none;
+}
+
+#errormsg,#registererrormsg{
+	color: rgb(255,0,0);
+}
+aside {
+	display: none;
+}
+.slider:after{
+	clear: both;
+	display: table;
+	content: "";
+}
+.slider{
+	width: 94%;
+	position: relative;
+	padding-top: 215px;
+	margin: 25px auto;
+}
+
+.slider>img{
+	position: absolute;
+    left: 10px;
+    top: 0;
+    transition: all 0.5s;
+    width: 91%;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider input{
+	display: none;
+}
+
+.slider label {
+	margin: 18px 0 0 18px;
+	border: 3px solid #999;	
+	float: left;
+	cursor:pointer;
+	transition: all 0.5s;
+	opacity: 0.6;
+}
+
+.slider label img{
+	display: block;
+	width: 50px;
+}
+.slider input {
+	border-color: #666;
+	opacity: 1;
+}
+.slider input ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+
+.slider input:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.edit{
+	background: url("../Images/edit.png") 70px 106px;
+	background-size: 300%;
+}
+.delete{
+	background: url("../Images/delete.png") 36px 0px;
+	background-size: 300%;
+}
+.like{
+	background: url("../Images/like.png") -6px 1px;
+	background-size: 300%;
+}
+.facebook_share{
+	background: url("../Images/facebooklogo.png") -150px 2px;
+	background-size: 300%;
+}
+.twitter_share{
+	background: url("../Images/facebooklogo.png") -2px -69px;
+	background-size: 300%;
+}
+footer{
+	margin: 1% 0 2% 9%;
+	width: 86%;
+	font-size: 1em;
+	line-height: 1.3em;
+	color: rgb(128,128,128);
+	border-top: 2px dotted rgba(128,128,128,0.5);
+}
+footer p{
+	width: 64%;
+	display: inline-block;;
+}
+footer p span{
+	display: block;
+	font-size: 0.6em;
+}
+footer p a{
+	text-decoration: none;
+	color: #61b6a6;
+	font-size: 0.5em;
+}
+footer .social{
+	display: inline-block;
+	width: 34%;
+}
+.social_media_logo {
+	display: inline-block;
+    width: 23px;
+    height: 23px;
+    margin: 2%;
+    border-radius: 50%;
+}
+.facebook_logo {
+    background: url('../Images/sprite.jpg') -264px 476px;
+}
+.facebook_logo:hover {
+    background: url('../Images/sprite.jpg') -24px 476px;
+}
+.twitter_logo {
+    background: url('../Images/sprite.jpg') -298px 476px;
+}
+.twitter_logo:hover{
+    background: url('../Images/sprite.jpg') -57px 476px;
+}
+.wifi_logo {
+    background: url('../Images/sprite.jpg') -332px 306px;
+}
+.wifi_logo:hover {
+    background: url('../Images/sprite.jpg') -91px 307px;
+}
+
+@media only screen 
+and (min-device-width : 768px){
+	.logo_icon{
+		left:2%;
+		top:-5%;
+	}
+	.show{
+		display: inline-block;
+	}
+	.menu_read{
+		display: none;
+	}
+	.dropdown-content{
+		display: block;
+		top:49px;
+		left:105px;
+		box-shadow: none;
+		font-weight: bolder;
+		min-width: 580px;
+	}
+	.dropdown-content li{
+		display: inline-block;
+		font-size: 1.15em;
+	}
+	.slider{
+		padding-top: 460px;
+	}
+	.slider label img{
+		width: 140px;
+	}
+	.login_form_div,.register_form_div{
+		width: 60%;
+		font-size: 1.5em;
+	}
+	.login_form_div input,.register_form_div input{
+		font-size: 1.1em;
+	}
+	.user_login_page{
+		font-size: 1.5em;
+	}
+	.user_login_page p{
+		font-size: 1.2em;
+		padding: 0px 0 0px 0;
+	}
+	.user_login_page p a {
+		padding: 30px;
+		font-size: 0.9em;
+		margin: 3%;
+		display: inline-block;
+		width: 15px;
+   	    height: 20px;
+	}
+	.btn_add_new_photo {
+		font-size: 1.0em;
+	}
+	.new_photo_div form {
+		padding: 2% 6%;
+		width: 82%;
+	}
+	.new_photo_div form input{
+		font-size: 0.9em;
+	}
+	.new_photo_div form textarea {
+    padding: 2% 1%;
+    min-width: 60%;
+    margin: 6% 0 0 0;
+    font-size: 0.9em;
+	}
+	.edit{
+		background: url("../Images/edit.png") -7px -68px;
+	}
+	.delete{
+		background: url("../Images/delete.png") 68px 5px;
+	}
+	.like{
+		background: url("../Images/like.png") -13px 5px;
+	}
+	.facebook_share{
+		background: url("../Images/facebooklogo.png") -90px 5px;
+	}
+	.twitter_share{
+		background: url("../Images/facebooklogo.png") -11px -140px;
+	}
+	.image_save_button {
+		margin: 6%;
+	}
+	.editInput{
+		font-size: 0.9em;
+	}
+	.editInput ~input {
+		font-size: 0.9em;
+	}
+	footer{
+		margin: 1% 0 2% 5%;
+		font-size: 1.3em;
+	}
+	footer p{
+		width: 80%;
+	}
+	footer p a{
+		font-size: 1em;
+		padding: 5px;
+	}
+	footer .social{
+		width: 15%;
+	}
+	footer p span{
+		font-size: 0.9em;
+	}
+}
+
+@media only screen 
+and (min-device-width : 1280px){
+	.logo_icon{
+		left:5%;
+	}
+	.dropdown-content {
+	    left: 133px;
+	    min-width: 990px;
+	    font-size: 1.75em;
+	}
+	.slider {
+	    padding-top: 500px;
+	}
+	.slider>img {
+		width: 60%;
+	}
+	.slider label img {
+	    width: 160px;
+	}
+	aside {
+	    font-size: 1.5em;
+	    display: inline-block;
+	    width: 28%;
+	    float: right;
+	    margin: -650px 57px 0 0;
+	    background: rgb(255,255,204);
+	    padding: 107px 24px;
+	}
+	aside h1{
+		border-bottom: 1px dotted rgba(128,128,128,0.5);
+		padding: 3%;
+	}
+	.twitter p,.facebook p{
+		padding: 5% 0;
+		margin-top: 5%;
+		line-height: 1.3em;
+	}
+	.twitter a{
+		background: url('../Images/tweeter.png') no-repeat 30px 16px;
+	}
+	.facebook a{
+		background: url('../Images/facebook.png') no-repeat 30px 16px;
+	}
+	.twitter a,.facebook a{
+		padding: 3% 5% 3% 20%;
+		text-decoration: none;
+		color: #61b6a6;
+   	    border: 1px solid rgba(128,128,128,1.0);
+   	    border-radius: 10px;
+   	    font-size: 1.1em;
+	}
+	.login_form_div,.register_form_div{
+		width: 45%;
+	}
+	.dropdown-content a{
+		padding: 12px 30px;
+	}
+	.user_login_page{
+		font-size: 2em;
+	}
+	.user_login_page p a{
+		padding: 26px;
+		font-size: 0.8em;
+	}
+	.imggallery{
+		width: 50%;
+		display: inline-block;
+	}
+	footer{
+		font-size: 1.5em;
+	}
+}

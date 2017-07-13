@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Gallery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="shortcut icon" href="Images/logo.png" type="favicon/ico" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/reset.css" />
+	<link rel = "stylesheet" type = "text/css" href = "CSS/style.css" />
+</head>
+<body onload="load()">
+	<div id="wrap">
+		<header>
+			<div id="menu_bar" class="menu">
+				<button onclick="menuFunction()" id="icon_reader" class="menu_read"></button>
+				<ul id="menu_list" class="dropdown-content">
+				    <li><a href="index.html">Home</a></li>
+				    <li><a href="#">About Us</a></li>
+				    <li><a href="#">Winner of Month</a></li>
+				    <li><a href="login.html">Login/Register</a></li>
+				 </ul>
+			</div>
+			<div id="logo" class="logo_icon"></div>
+		</header>
+
+		<div id="register_form_div_id" class="register_form_div">
+		<h1>Register Here</h1>
+			<form id="register_form">
+				<label>
+					<span>UserName</span>
+					<input type="text" name="username" placeholder="UserName" required>
+				</label>
+
+				<label>
+					<span>Password</span>
+					<input type="password" name="password" placeholder="Password" required>
+				</label>
+
+				<label>
+					<span>Confirm Password</span>
+					<input type="password" name="confirm_password" placeholder="Confirm Password" required>
+				</label>
+
+				<input id="submitbtn" type="submit" name="submit" value="Register">
+			</form>
+
+			<!-- <span>Already User </span><a href="#" onclick="show('login_form','register_form')">Log In Here</a> -->	
+
+			<span id="login_register">Already User </span><a href="login.html">Log In Here</a>
+		</div>
+
+		<footer>
+			<p>
+				<a href="">Privacy Policy</a>|
+				<a href="">Terms of Use</a>|
+				<a href="">Contact</a>
+				<span>&copy; 2017 MyGallery, all rights reserved.</span>
+			</p>
+			<div class="social">
+				<a class="social_media_logo facebook_logo" href=""></a>
+				<a class="social_media_logo twitter_logo" href=""></a>
+				<a class="social_media_logo wifi_logo" href=""></a>
+			</div>
+		</footer>
+	</div>
+	<script src="JS/script.js"></script> 
+</body>
+</html>

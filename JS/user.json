@@ -1,0 +1,29 @@
+{
+   "user": [
+       {
+           "username": "p",
+           "password": "p",
+           "galleryid":[1,2]
+       },
+       {
+           "username": "akshay",
+           "password": "akshay",
+           "galleryid":[3,4]
+       },
+       {
+           "username": "sameer",
+           "password": "sameer",
+           "galleryid":[5,6]
+       },
+       {
+           "username": "sudhir",
+           "password": "sudhir",
+           "galleryid":[7,8]
+       },
+       {
+           "username": "pooja",
+           "password": "pooja",
+           "galleryid":[9,10]
+       }
+   ]
+}

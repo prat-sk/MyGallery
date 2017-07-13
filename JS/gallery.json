@@ -1,0 +1,64 @@
+{
+   "gallery": [
+       {
+           "id": 1,
+           "url": "./Images/adventure.jpg",
+           "description":"adventure",
+           "likes":1
+       },
+       {
+           "id": 2,
+           "url": "./Images/butterfly.jpg",
+           "description":"butterfly",
+           "likes":2
+       },
+       {
+           "id": 3,
+           "url": "./Images/sprite.jpg",
+           "description":"adventure",
+           "likes":1
+       },
+       {
+           "id": 4,
+           "url": "./Images/butterfly.jpg",
+           "description":"butterfly",
+           "likes":2
+       },
+       {
+           "id": 5,
+           "url": "./Images/adventure.jpg",
+           "description":"adventure",
+           "likes":1
+       },
+       {
+           "id": 6,
+           "url": "./Images/butterfly.jpg",
+           "description":"butterfly",
+           "likes":2
+       },
+       {
+           "id": 7,
+           "url": "./Images/adventure.jpg",
+           "description":"adventure",
+           "likes":1
+       },
+       {
+           "id": 8,
+           "url": "./Images/butterfly.jpg",
+           "description":"butterfly",
+           "likes":2
+       },
+       {
+           "id": 9,
+           "url": "./Images/adventure.jpg",
+           "description":"adventure",
+           "likes":1
+       },
+       {
+           "id": 10,
+           "url": "./Images/butterfly.jpg",
+           "description":"butterfly",
+           "likes":2
+       }
+   ]
+}
